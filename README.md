@@ -1,6 +1,6 @@
 # tut_block
 
-A new Flutter application. BLoC tuturial
+A new Flutter application. Use BLoC pattern tutorial
 
 ## Getting Started
 
