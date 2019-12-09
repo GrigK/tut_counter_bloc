@@ -25,6 +25,9 @@ class MyApp extends StatelessWidget {
       create: (context) => ThemeBloc(),
       child: BlocBuilder<ThemeBloc, ThemeData>(
         builder: (context, theme) {
+          /// ThemeBloc - это глобальный BLoC
+          /// доступный из любого места MaterialApp через
+          /// BlocProvider.of<ThemeBloc>(context)
           return MaterialApp(
             localizationsDelegates: [
               S.delegate,
@@ -39,7 +42,6 @@ class MyApp extends StatelessWidget {
             home: BlocProvider(
               create: (context) => CounterBloc(),
               child: HomePage(),
-//              child: CounterPage(),
             ),
             theme: theme,
           );
