@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
               heroTag: 1,
               child: Icon(Icons.add),
               onPressed: () {
-                BlocProvider.of<CounterBloc>(context).add(CounterEvent.increment);
+                counterBloc.add(CounterEvent.increment);
               },
             ),
           ),
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
               heroTag: 0,
               child: Icon(Icons.remove),
               onPressed: () {
-                BlocProvider.of<CounterBloc>(context).add(CounterEvent.decrement);
+                counterBloc.add(CounterEvent.decrement);
               },
             ),
           ),
