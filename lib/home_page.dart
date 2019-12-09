@@ -17,6 +17,7 @@ class HomePage extends StatelessWidget {
     ///  var _counterBloc;
     ///  void init() { _counterBloc = BlocProvider.of<CounterBloc>(context); }
     ///  void dispose() { _counterBloc.close(); }
+    ///  однако нам надо передать экзкмпляр CounterBloc на вторую страницу
 
     final counterBloc = BlocProvider.of<CounterBloc>(context);
     return Scaffold(

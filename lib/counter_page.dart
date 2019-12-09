@@ -10,6 +10,7 @@ import 'package:tut_block/generated/i18n.dart';
 class CounterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    /// CounterBloc передан сюда из HomePage
     final counterBloc = BlocProvider.of<CounterBloc>(context);
 
     return Scaffold(
