@@ -8,7 +8,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tut_block/generated/i18n.dart';
 import 'package:tut_block/simple_bloc_delegate.dart';
 import 'package:tut_block/counter_bloc.dart';
-import 'package:tut_block/counter_page.dart';
+//import 'package:tut_block/counter_page.dart';
+import 'package:tut_block/home_page.dart';
 import 'package:tut_block/theme_block.dart';
 
 
@@ -37,7 +38,8 @@ class MyApp extends StatelessWidget {
             onGenerateTitle: (context) => S.of(context).titleApp,
             home: BlocProvider(
               create: (context) => CounterBloc(),
-              child: CounterPage(),
+              child: HomePage(),
+//              child: CounterPage(),
             ),
             theme: theme,
           );
