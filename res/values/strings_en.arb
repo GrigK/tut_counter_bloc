@@ -1,0 +1,7 @@
+{
+  "titleApp": "Counter Demo",
+  "titleHomePage": "Counter Demo Home Page",
+  "textOfHomePage": "You have pushed the buttons this many times:",
+  "tooltipInc": "Increment",
+  "tooltipDec": "Decrement"
+}
