@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:tut_block/counter_page.dart';
-import 'package:tut_block/counter_bloc.dart';
+import 'package:tut_block/counter/counter_page.dart';
+import 'package:tut_block/counter/counter_bloc.dart';
 import 'package:tut_block/generated/i18n.dart';
 
 
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
               ),
             );
           },
-          child: Text('Counter'),
+          child: Text(S.of(context).btnCounter),
         ),
       ),
       floatingActionButton: Column(

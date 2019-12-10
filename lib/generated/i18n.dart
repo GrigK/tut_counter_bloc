@@ -21,6 +21,7 @@ class S implements WidgetsLocalizations {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
+  String get btnCounter => "Counter page";
   String get textOfHomePage => "You have pushed the buttons this many times:";
   String get titleApp => "Counter Demo";
   String get titleHomePage => "Counter Demo Home Page";
@@ -36,6 +37,8 @@ class $ru extends S {
 
   @override
   String get titleApp => "Счетчик Демо";
+  @override
+  String get btnCounter => "Страница счетчика";
   @override
   String get textOfHomePage => "Счетчик считает Ваши нажатия:";
   @override

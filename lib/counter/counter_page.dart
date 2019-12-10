@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:tut_block/counter_bloc.dart';
+import 'package:tut_block/counter/counter_bloc.dart';
 import 'package:tut_block/theme_block.dart';
 import 'package:tut_block/generated/i18n.dart';
 

@@ -3,5 +3,6 @@
   "titleHomePage": "Счетчик",
   "textOfHomePage": "Счетчик считает Ваши нажатия:",
   "tooltipInc": "Прибавить",
-  "tooltipDec": "Вычесть"
+  "tooltipDec": "Вычесть",
+  "btnCounter": "Страница счетчика"
 }
