@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
 
     final CounterBloc counterBloc = BlocProvider.of<CounterBloc>(context);
     return Scaffold(
-      appBar: AppBar(title: Text('Counter')),
+      appBar: AppBar(title: Text(S.of(context).titleHomePage)),
       body: Center(
         child: RaisedButton(
           onPressed: () {

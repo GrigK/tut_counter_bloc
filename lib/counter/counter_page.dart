@@ -14,7 +14,19 @@ class CounterPage extends StatelessWidget {
     final counterBloc = BlocProvider.of<CounterBloc>(context);
 
     return Scaffold(
-      appBar: AppBar(title: Text(S.of(context).titleHomePage)),
+      appBar: AppBar(
+          title: Text(S.of(context).titleHomePage),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.brightness_medium),
+              onPressed: () {
+                // Используем глобальный BLoC (смена темы)
+                BlocProvider.of<ThemeBloc>(context).add(ThemeEvent.toggle);
+              }
+            ),
+            SizedBox(width: 16.0,)
+          ],
+      ),
       body: BlocBuilder<CounterBloc, int>(
         builder: (context, count) {
           return Column(
@@ -47,8 +59,6 @@ class CounterPage extends StatelessWidget {
               tooltip: S.of(context).tooltipInc,
               onPressed: () {
                 counterBloc.add(CounterEvent.increment);
-                // Используем глобальный BLoC (тема)
-                BlocProvider.of<ThemeBloc>(context).add(ThemeEvent.toggle);
               },
             ),
           ),
@@ -67,6 +77,7 @@ class CounterPage extends StatelessWidget {
       ),
     );
   }
+
 }
 
 /// пример использования BLoC на уровне виджета
